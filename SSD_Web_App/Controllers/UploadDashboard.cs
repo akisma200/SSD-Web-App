@@ -15,9 +15,12 @@ namespace SSD_Web_App.Controllers
 
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         // From Form attribute: https://docs.microsoft.com/en-us/aspnet/web-api/overview/formats-and-model-binding/parameter-binding-in-aspnet-web-api
         public IActionResult Analyse([FromForm]string code)
         {
+            
+
             ViewData["Response"] = code;
 
             return View();

@@ -8,6 +8,8 @@
     <h2>Please insert your code snippet in the text area below and hit analyse.</h2>
 
     <form action="/UploadDashboard/Analyse" method="post">
+        @Html.AntiForgeryToken()
+
         <textarea name="code" class="code-input">
         </textarea>
         <br/>
