@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "Upload Dashboard";
+}
+
+<div>
+    <h1>Upload Dashboard</h1>
+
+    <h2>Please insert your code snippet in the text area below and hit analyse.</h2>
+
+    <form action="/UploadDashboard/Analyse" method="post">
+        <textarea name="code" class="code-input">
+        </textarea>
+        <br/>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<style>
+    .code-input {
+        width: 70vw;
+        height: 60vh;
+    }
+</style>
